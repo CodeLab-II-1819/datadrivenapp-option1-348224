@@ -1,8 +1,31 @@
 #include <iostream>
 #include <fstream>
+#include <vector>
 #include <string>
 using namespace std;
 
+/*
+int main() {
+
+	string data;
+	ifstream inFile;
+	inFile.open("sampleTweets.csv");
+	int count = 0;
+	if (inFile.good()) {
+		while (!inFile.eof()) {
+			getline(inFile, data);
+			cout << data << endl;
+		}
+		inFile.close();
+	}
+
+	system("pause");
+	return 0;
+}
+*/
+
+void selection();
+void menu();
 void countOverall(ifstream &inFile);
 void countMoney(ifstream &inFile);
 void countPolitics(ifstream &inFile);
@@ -13,12 +36,14 @@ void printTrump(ifstream &inFile);
 void printObama(ifstream &inFile);
 void printDogs(ifstream &inFile);
 void printChristmas(ifstream &inFile);
+int keyPress;
 
 
-int main() {
+
+
+void menu() {
 
 	cout << "Please select an option:" << endl;
-	break;
 
 	cout << "1/ Display number of tweets from sample." << endl;
 	cout << "2/ Display number of tweets that mention money" << endl;
@@ -33,19 +58,67 @@ int main() {
 
 }
 
-/*int main() {
-	
-	string data;
-
-	ifstream inFile;
-	inFile.open("sampleTweets.csv");
-
-	if (inFile.good()) {
-		while (!inFile.eof()) {
-			getline(inFile, data);
-			cout << data << endl;
-		}
-		inFile.close();
+void selection() {
+	switch (keyPress) {
+		case 0: countOverall();
+			break;
+		case 1: countMoney();
+			break;
+		case 2: countPolitics();
+			break;
+		case 3: printParis();
+			break;
+		case 4: printDreamWorks();
+			break;
+		case 5: printUber();
+			break;
+		case 6: printTrump();
+			break;
+		case 7: printObama();
+			break;
+		case 8: printDogs();
+			break;
+		case 9: printChristmas();
+			break;
 	}
-	return 0;
-}*/
+}
+
+void countOverall() {
+
+}
+
+void countMoney() {
+
+}
+
+void countPolitics() {
+
+}
+
+void printParis() {
+
+}
+
+void printDreamWorks() {
+
+}
+
+void printUber() {
+
+}
+
+void printTrump() {
+
+}
+
+void printObama() {
+
+}
+
+void printDogs() {
+
+}
+
+void printChristmas() {
+
+}
