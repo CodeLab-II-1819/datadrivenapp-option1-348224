@@ -6,7 +6,6 @@ using namespace std;
 
 
 int input;
-string dataGrab
 
 /*
 void data() {
@@ -23,7 +22,7 @@ void data() {
 	}
 */
 
-}
+
 int main() {
 
 	cout << "Please select an option:" << endl;
@@ -42,72 +41,122 @@ int main() {
 	cin >> input;
 
 	if (input == 1) {
+		string data;
+		ifstream inFile;
+		inFile.open("sampleTweets.csv");
+
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
+				cout << data << endl;
 			}
 		}
 	}
 	else if (input == 2) {
+		string data;
+		ifstream inFile;
+		inFile.open("sampleTweets.csv");
+
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
+				cout << data << endl;
 			}
 		}
 	}
 	else if (input == 3) {
+		string data;
+		ifstream inFile;
+		inFile.open("sampleTweets.csv");
+
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
+				cout << data << endl;
 			}
 		}
 	}
 	else if (input == 4) {
+		string data;
+		ifstream inFile;
+		inFile.open("sampleTweets.csv");
+
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
+				cout << data << endl;
 			}
 		}
 	}
 	else if (input == 5) {
+		string data;
+		ifstream inFile;
+		inFile.open("sampleTweets.csv");
+
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
+				cout << data << endl;
 			}
 		}
 	}
 	else if (input == 6) {
+		string data;
+		ifstream inFile;
+		inFile.open("sampleTweets.csv");
+
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
+				cout << data << endl;
 			}
 		}
 	}
 	else if (input == 7) {
+		string data;
+		ifstream inFile;
+		inFile.open("sampleTweets.csv");
+
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
+				cout << data << endl;
 			}
 		}
 	}
 	else if (input == 8) {
+		string data;
+		ifstream inFile;
+		inFile.open("sampleTweets.csv");
+
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
+				cout << data << endl;
 			}
 		}
 	}
 	else if (input == 9) {
+		string data;
+		ifstream inFile;
+		inFile.open("sampleTweets.csv");
+
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
+				cout << data << endl;
 			}
 		}
 	}
 	else if (input == 10) {
+		string data;
+		ifstream inFile;
+		inFile.open("sampleTweets.csv");
+
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
+				cout << data << endl;
 			}
 		}
 	}
