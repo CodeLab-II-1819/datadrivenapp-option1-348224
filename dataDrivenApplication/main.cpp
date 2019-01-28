@@ -4,8 +4,12 @@
 #include <string>
 using namespace std;
 
+
+int input;
+string dataGrab
+
 /*
-int main() {
+void data() {
 
 	string data;
 	ifstream inFile;
@@ -14,34 +18,13 @@ int main() {
 	if (inFile.good()) {
 		while (!inFile.eof()) {
 			getline(inFile, data);
-			cout << data << endl;
 		}
 		inFile.close();
 	}
-
-	system("pause");
-	return 0;
-}
 */
 
-void selection();
-void menu();
-void countOverall(ifstream &inFile);
-void countMoney(ifstream &inFile);
-void countPolitics(ifstream &inFile);
-void printParis(ifstream &inFile);
-void printDreamWorks(ifstream &inFile);
-void printUber(ifstream &inFile);
-void printTrump(ifstream &inFile);
-void printObama(ifstream &inFile);
-void printDogs(ifstream &inFile);
-void printChristmas(ifstream &inFile);
-int keyPress;
-
-
-
-
-void menu() {
+}
+int main() {
 
 	cout << "Please select an option:" << endl;
 
@@ -56,9 +39,105 @@ void menu() {
 	cout << "9/ Display all tweets that mention 'Dogs'." << endl;
 	cout << "10/ Display all tweets that mention 'Christmas'." << endl;
 
+	cin >> input;
+
+	if (input == 1) {
+		if (inFile.good()) {
+			while (!inFile.eof()) {
+				getline(inFile, data);
+			}
+		}
+	}
+	else if (input == 2) {
+		if (inFile.good()) {
+			while (!inFile.eof()) {
+				getline(inFile, data);
+			}
+		}
+	}
+	else if (input == 3) {
+		if (inFile.good()) {
+			while (!inFile.eof()) {
+				getline(inFile, data);
+			}
+		}
+	}
+	else if (input == 4) {
+		if (inFile.good()) {
+			while (!inFile.eof()) {
+				getline(inFile, data);
+			}
+		}
+	}
+	else if (input == 5) {
+		if (inFile.good()) {
+			while (!inFile.eof()) {
+				getline(inFile, data);
+			}
+		}
+	}
+	else if (input == 6) {
+		if (inFile.good()) {
+			while (!inFile.eof()) {
+				getline(inFile, data);
+			}
+		}
+	}
+	else if (input == 7) {
+		if (inFile.good()) {
+			while (!inFile.eof()) {
+				getline(inFile, data);
+			}
+		}
+	}
+	else if (input == 8) {
+		if (inFile.good()) {
+			while (!inFile.eof()) {
+				getline(inFile, data);
+			}
+		}
+	}
+	else if (input == 9) {
+		if (inFile.good()) {
+			while (!inFile.eof()) {
+				getline(inFile, data);
+			}
+		}
+	}
+	else if (input == 10) {
+		if (inFile.good()) {
+			while (!inFile.eof()) {
+				getline(inFile, data);
+			}
+		}
+	}
 }
 
-void selection() {
+
+
+
+
+
+
+/*
+void selection();
+void menu();
+void countOverall(ifstream &inFile);
+void countMoney(ifstream &inFile);
+void countPolitics(ifstream &inFile);
+void printParis(ifstream &inFile);
+void printDreamWorks(ifstream &inFile);
+void printUber(ifstream &inFile);
+void printTrump(ifstream &inFile);
+void printObama(ifstream &inFile);
+void printDogs(ifstream &inFile);
+void printChristmas(ifstream &inFile);
+int keyPress;
+*/
+
+
+ /*
+ void selection() {
 	switch (keyPress) {
 		case 0: countOverall();
 			break;
@@ -82,7 +161,9 @@ void selection() {
 			break;
 	}
 }
+*/
 
+ /*
 void countOverall() {
 
 }
@@ -122,3 +203,5 @@ void printDogs() {
 void printChristmas() {
 
 }
+*/
+
