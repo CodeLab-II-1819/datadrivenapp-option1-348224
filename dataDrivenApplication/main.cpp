@@ -48,7 +48,8 @@ int main() {
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				cout << data << endl;
+				int totalCount; // int count for first 3 statements
+				cout << totalCount << endl;
 			}
 		}
 	}
@@ -60,7 +61,11 @@ int main() {
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				cout << data << endl;
+				string money;
+				int moneyCount; // int count for first 3 statements
+				if (money.find("money") == 0) {
+					cout << "PLACEHOLDER" << endl;
+				}
 			}
 		}
 	}
@@ -72,7 +77,11 @@ int main() {
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				cout << data << endl;
+				string politics;
+				int politicsCount; // int count for first 3 statements
+				if (politics.find("politics") == 0) {
+					cout << "PLACEHOLDER" << endl;
+				}
 			}
 		}
 	}
@@ -84,7 +93,10 @@ int main() {
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				cout << data << endl;
+				string paris;
+				if (paris.find("Paris") == 0) {
+					cout << "PLACEHOLDER" << endl; //"PLACEHOLDER" temporary until know how to fill
+				}
 			}
 		}
 	}
@@ -96,7 +108,10 @@ int main() {
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				cout << data << endl;
+				string dream;
+				if (dream.find("DreamWorks") == 0) {
+					cout << "PLACEHOLDER" << endl;
+				}
 			}
 		}
 	}
@@ -108,7 +123,10 @@ int main() {
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				cout << data << endl;
+				string uber;
+				if (uber.find("Uber") == 0) {
+					cout << "PLACEHOLDER" << endl;
+				}
 			}
 		}
 	}
@@ -120,7 +138,10 @@ int main() {
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				cout << data << endl;
+				string trump;
+				if (trump.find("Trump") == 0) {
+					cout << "PLACEHOLDER" << endl;
+				}
 			}
 		}
 	}
@@ -132,7 +153,10 @@ int main() {
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				cout << data << endl;
+				string obama;
+				if (obama.find("Obama") == 0) {
+					cout << "PLACEHOLDER" << endl;
+				}
 			}
 		}
 	}
@@ -144,7 +168,10 @@ int main() {
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				cout << data << endl;
+				string dog;
+				if (dog.find("dog") == 0) {
+					cout << "PLACEHOLDER" << endl;
+				}
 			}
 		}
 	}
@@ -156,7 +183,10 @@ int main() {
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				cout << data << endl;
+				string christmas;
+				if (christmas.find("Christmas") == 0) {
+					cout << "PLACEHOLDER" << endl;
+				}
 			}
 		}
 	}
