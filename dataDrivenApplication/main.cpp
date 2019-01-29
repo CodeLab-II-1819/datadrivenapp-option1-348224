@@ -33,155 +33,154 @@ int main() {
 		
 		ifstream inFile;
 		inFile.open("sampleTweets.csv");
-
+		cout << "Reading file..." << endl;
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
 				count++;
 			}
+			inFile.close();
 			cout << count << endl;
-		}
-		inFile.close();
+		}	
 	}
 	else if (input == 2) {
 		
 		ifstream inFile;
 		inFile.open("sampleTweets.csv");
-
+		cout << "Reading file..." << endl;
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
 				if (data.find("money")<=data.length()) {
 					count++;
-					cout << count << endl;
 				}
-				inFile.close();
 			}
-			
-		}
-		
-	}/*
+			inFile.close();
+			cout << count << endl;
+		}	
+	}
 	else if (input == 3) {
-		string data;
+
 		ifstream inFile;
 		inFile.open("sampleTweets.csv");
-
+		cout << "Reading file..." << endl;
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				string politics;
-				int politicsCount; // int count for first 3 statements
-				if (politics.find("politics") == 0) {
-					cout << "PLACEHOLDER" << endl;
+				if (data.find("politics") <= data.length()) {
+					count++;
 				}
 			}
+			inFile.close();
+			cout << count << endl;
 		}
 	}
 	else if (input == 4) {
-		string data;
+
 		ifstream inFile;
 		inFile.open("sampleTweets.csv");
-
+		cout << "Reading file..." << endl;
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				string paris;
-				if (paris.find("Paris") == 0) {
-					cout << "PLACEHOLDER" << endl; //"PLACEHOLDER" temporary until know how to fill
+				if (data.find("Paris") <= data.length()) {
+					cout << data << endl;
 				}
 			}
+			inFile.close();
 		}
 	}
 	else if (input == 5) {
-		string data;
+
 		ifstream inFile;
 		inFile.open("sampleTweets.csv");
-
+		cout << "Reading file..." << endl;
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				string dream;
-				if (dream.find("DreamWorks") == 0) {
-					cout << "PLACEHOLDER" << endl;
+				if (data.find("DreamWorks") <= data.length()) {
+					cout << data << endl;
 				}
 			}
+			inFile.close();
 		}
 	}
 	else if (input == 6) {
-		string data;
+
 		ifstream inFile;
 		inFile.open("sampleTweets.csv");
-
+		cout << "Reading file..." << endl;
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				string uber;
-				if (uber.find("Uber") == 0) {
-					cout << "PLACEHOLDER" << endl;
+				if (data.find("Uber") <= data.length()) {
+					cout << data << endl;
 				}
 			}
+			inFile.close();
 		}
 	}
 	else if (input == 7) {
-		string data;
+
 		ifstream inFile;
 		inFile.open("sampleTweets.csv");
-
+		cout << "Reading file..." << endl;
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				string trump;
-				if (trump.find("Trump") == 0) {
-					cout << "PLACEHOLDER" << endl;
+				if (data.find("Trump") <= data.length()) {
+					cout << data << endl;
 				}
 			}
+			inFile.close();
 		}
 	}
 	else if (input == 8) {
-		string data;
+
 		ifstream inFile;
 		inFile.open("sampleTweets.csv");
-
+		cout << "Reading file..." << endl;
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				string obama;
-				if (obama.find("Obama") == 0) {
-					cout << "PLACEHOLDER" << endl;
+				if (data.find("Obama") <= data.length()) {
+					cout << data << endl;
 				}
 			}
+			inFile.close();
 		}
 	}
 	else if (input == 9) {
-		string data;
+
 		ifstream inFile;
 		inFile.open("sampleTweets.csv");
-
+		cout << "Reading file..." << endl;
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				string dog;
-				if (dog.find("dog") == 0) {
-					cout << "PLACEHOLDER" << endl;
+				if (data.find("dog") <= data.length()) {
+					cout << data << endl;
 				}
 			}
+			inFile.close();
 		}
 	}
 	else if (input == 10) {
-		string data;
+
 		ifstream inFile;
 		inFile.open("sampleTweets.csv");
-
+		cout << "Reading file..." << endl;
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				string christmas;
-				if (christmas.find("Christmas") == 0) {
-					cout << "PLACEHOLDER" << endl;
+				if (data.find("Christmas") <= data.length()) {
+					cout << data << endl;
 				}
 			}
+			inFile.close();
 		}
-	}*/
+	}
+	system("pause");
 }
 
 
