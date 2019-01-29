@@ -7,21 +7,6 @@ using namespace std;
 
 int input;
 
-/*
-void data() {
-
-	string data;
-	ifstream inFile;
-	inFile.open("sampleTweets.csv");
-	int count = 0;
-	if (inFile.good()) {
-		while (!inFile.eof()) {
-			getline(inFile, data);
-		}
-		inFile.close();
-	}
-*/
-
 
 int main() {
 
@@ -40,35 +25,42 @@ int main() {
 
 	cin >> input;
 
+	int count = 0;
+	string data;
+
+
 	if (input == 1) {
-		string data;
+		
 		ifstream inFile;
 		inFile.open("sampleTweets.csv");
 
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				int totalCount; // int count for first 3 statements
-				cout << totalCount << endl;
+				count++;
 			}
+			cout << count << endl;
 		}
+		inFile.close();
 	}
 	else if (input == 2) {
-		string data;
+		
 		ifstream inFile;
 		inFile.open("sampleTweets.csv");
 
 		if (inFile.good()) {
 			while (!inFile.eof()) {
 				getline(inFile, data);
-				string money;
-				int moneyCount; // int count for first 3 statements
-				if (money.find("money") == 0) {
-					cout << "PLACEHOLDER" << endl;
+				if (data.find("money")<=data.length()) {
+					count++;
+					cout << count << endl;
 				}
+				inFile.close();
 			}
+			
 		}
-	}
+		
+	}/*
 	else if (input == 3) {
 		string data;
 		ifstream inFile;
@@ -189,9 +181,8 @@ int main() {
 				}
 			}
 		}
-	}
+	}*/
 }
-
 
 
 
@@ -214,33 +205,6 @@ void printChristmas(ifstream &inFile);
 int keyPress;
 */
 
-
- /*
- void selection() {
-	switch (keyPress) {
-		case 0: countOverall();
-			break;
-		case 1: countMoney();
-			break;
-		case 2: countPolitics();
-			break;
-		case 3: printParis();
-			break;
-		case 4: printDreamWorks();
-			break;
-		case 5: printUber();
-			break;
-		case 6: printTrump();
-			break;
-		case 7: printObama();
-			break;
-		case 8: printDogs();
-			break;
-		case 9: printChristmas();
-			break;
-	}
-}
-*/
 
  /*
 void countOverall() {
