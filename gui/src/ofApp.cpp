@@ -2,70 +2,29 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::update(){
-
+	baseGUI.load("assessmentGUI");
+	titleFont.load("helvetica-neue-5-cufonfonts/HelveticaNeuwBoldItalic", 42);
+	mainFont.load("helvetica-neue-5-cufonfonts/HelveticaBlkIt", 24);
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::keyPressed(int key){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::keyReleased(int key){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y ){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseEntered(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseExited(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
+	baseGUI.draw(0, 0);
+	titleFont.drawString("Tweet Finder", 600, 60);
+	mainFont.drawString("Choose a topic on the left to view all recent tweets regarding that topic:", 600, 120);
+	mainFont.drawString("Current Topic:", 100, 20);
+	mainFont.drawString("Paris", 100, 70);
+	mainFont.drawString("All", 100, 140);
+	mainFont.drawString("Money", 100, 200);
+	mainFont.drawString("Politics", 100, 260);
+	mainFont.drawString("Paris", 100, 320);
+	mainFont.drawString("DreamWorks", 100, 380);
+	mainFont.drawString("Uber", 100, 440);
+	mainFont.drawString("Trump", 100, 500);
+	mainFont.drawString("Obama", 100, 560);
+	mainFont.drawString("Dogs", 100, 620);
+	mainFont.drawString("Christmas", 100, 680);
+	mainFont.drawString("Total Count: - number of tweets -", 400, 200);
+	mainFont.drawString("- list of all tweets -", 400, 200);
 
 }
