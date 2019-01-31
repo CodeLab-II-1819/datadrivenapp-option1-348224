@@ -5,13 +5,13 @@
 using namespace std;
 
 
-int input;
-char replay = 'y';
+int input; // Initialises the users input number to select an option
+char replay = 'y'; // Initialises the condition for the while loop to remain in effect
 
 
 int main() {
 
-	while (replay == 'y') {
+	while (replay == 'y') { // Opening of the while loop that keeps the program open until replay != y
 
 		cout << "Please select an option:" << endl;
 
@@ -26,24 +26,24 @@ int main() {
 		cout << "9/ Display all tweets that mention 'Dogs'." << endl;
 		cout << "10/ Display all tweets that mention 'Christmas'." << endl;
 
-		cin >> input;
+		cin >> input; // User inputs their selected integer
 
-		int count = 0;
-		string data;
+		int count = 0; // Initialises the counter used to count the number of relevant tweets
+		string data; // Initialises the string that is used to search for keywords
 
 
 		if (input == 1) {
 
-			ifstream inFile;
-			inFile.open("sampleTweets.csv");
+			ifstream inFile; // Initialises the reading of the file
+			inFile.open("sampleTweets.csv"); // Opens the file that needs to be searched 
 			cout << "Reading file..." << endl;
-			if (inFile.good()) {
-				while (!inFile.eof()) {
-					getline(inFile, data);
-					count++;
+			if (inFile.good()) { // Determines if the file opens
+				while (!inFile.eof()) { // Loops the process if the end of the file hasn't been reached
+					getline(inFile, data); // Reads the line in accordance to the data given (in this case, every line counts)
+					count++; // Increases the counter by one for every line of data
 				}
-				inFile.close();
-				cout << count << endl;
+				inFile.close(); // Closes the file
+				cout << count << endl; // Prints the total number of tweets, as per the condition
 			}
 		}
 		else if (input == 2) {
@@ -54,7 +54,7 @@ int main() {
 			if (inFile.good()) {
 				while (!inFile.eof()) {
 					getline(inFile, data);
-					if (data.find("money") <= data.length()) {
+					if (data.find("money") <= data.length()) { // If statement tells the program to only look for tweets mentioning money using the data.find() string, rather than every line
 						count++;
 					}
 				}
@@ -87,7 +87,7 @@ int main() {
 				while (!inFile.eof()) {
 					getline(inFile, data);
 					if (data.find("Paris") <= data.length()) {
-						cout << data << endl;
+						cout << data << endl; // From here, instead of printing the total count of tweets, the tweets themselves are printed by simply showing the data instead
 					}
 				}
 				inFile.close();
@@ -185,74 +185,9 @@ int main() {
 		}
 
 		cout << "Do you want to continue? (Y/N)" << endl;
-		cin >> replay;
+		cin >> replay; // If the user enters a character other than 'y', the program closes
 
 	}
 
-	system("pause");
+	system("pause"); // Pauses the system so the program doesn't run then immediately finish
 }
-
-
-
-
-
-
-/*
-void selection();
-void menu();
-void countOverall(ifstream &inFile);
-void countMoney(ifstream &inFile);
-void countPolitics(ifstream &inFile);
-void printParis(ifstream &inFile);
-void printDreamWorks(ifstream &inFile);
-void printUber(ifstream &inFile);
-void printTrump(ifstream &inFile);
-void printObama(ifstream &inFile);
-void printDogs(ifstream &inFile);
-void printChristmas(ifstream &inFile);
-int keyPress;
-*/
-
-
- /*
-void countOverall() {
-
-}
-
-void countMoney() {
-
-}
-
-void countPolitics() {
-
-}
-
-void printParis() {
-
-}
-
-void printDreamWorks() {
-
-}
-
-void printUber() {
-
-}
-
-void printTrump() {
-
-}
-
-void printObama() {
-
-}
-
-void printDogs() {
-
-}
-
-void printChristmas() {
-
-}
-*/
-
