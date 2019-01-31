@@ -11,4 +11,5 @@ class ofApp : public ofBaseApp{
 		ofImage baseGUI;
 		ofTrueTypeFont titleFont;
 		ofTrueTypeFont mainFont;
+		ofTrueTypeFont tweetFont;
 };
